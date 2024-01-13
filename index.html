@@ -60,8 +60,7 @@ var SPRP_M = 5;
 var HDCR_M = 5;
 var JTBT_M = 10;
 
-// �e�X�L���̃t���O
-// ���m
+
 function BASH_F(){
 	Point(BASH_P,10,"BASH");
 	if(BASH_P<5){
@@ -156,7 +155,6 @@ function TSDM_F(){
 	}
 }
 
-// �i�C�g
 function ACNT_F(){
 	Point(ACNT_P,5 ,"ACNT");
 	if(ACNT_P<5){
@@ -289,7 +287,6 @@ function THQK_F(){
 	}
 }
 
-// ���[�h�i�C�g
 
 function ARBL_F(){
 	Point(ARBL_P,5,"ARBL");
@@ -361,7 +358,6 @@ function JTBT_F(){
 	}
 }
 
-// �C�x���g
 function setPoint(parts,point){
 	if(parts == "BASH") { if(point>=0 && point<=10) BASH_P=point; BASH_F(); }
 	if(parts == "ENDR") { if(point>=0 && point<=10) ENDR_P=point; ENDR_F(); }
@@ -407,7 +403,6 @@ function ShowPoint(){
 }
 
 
-//�R���g���[���֘A
 function Clear(){
 	BASH_P = ENDR_P = HPRC_P = MGBR_P
 	= PRVK_P = SWDM_P = TSDM_P
@@ -540,7 +535,6 @@ Job Change<nobr>
 <option value="41">Job41
 <option value="40">Job40
 </select>
-<b>��</b>
 <select name="jobchg2" onchange="JCHT_P=this.value; showMsg()">
 <option value="70" selected>Job70
 <option value="69">Job69
@@ -565,17 +559,16 @@ Job Change<nobr>
 <option value="50">Job50
 
 </select>
-�@�@
-Name <input type="text" name="chrName" size=20 maxlength=20 value="" title="Name your save slot">�@
+Name <input type="text" name="chrName" size=20 maxlength=20 value="" title="Name your save slot">
 <u>
-<a class="con" href="JavaScript:Save('cookie');" title="Save to Cookie"> Save </a>�@
-<a class="con" href="JavaScript:Load('cookie');" title="Load from Cookie"> Load </a>�@
-<a class="con" href="JavaScript:Reset();"			title="Clear all points"> Reset</a>�@
-<a class="con" href="JavaScript:codeCopy();"		title="Skill Points to URL"> URL</a>�@
-<a class="con" href="JavaScript:DeleteSlot();"		title="Delete Save Slot"> Delete </a>�@
-<a class="con" href="../"	title="Home">Home</a>�@
+<a class="con" href="JavaScript:Save('cookie');" title="Save to Cookie"> Save </a>
+<a class="con" href="JavaScript:Load('cookie');" title="Load from Cookie"> Load </a>
+<a class="con" href="JavaScript:Reset();"			title="Clear all points"> Reset</a>
+<a class="con" href="JavaScript:codeCopy();"		title="Skill Points to URL"> URL</a>
+<a class="con" href="JavaScript:DeleteSlot();"		title="Delete Save Slot"> Delete </a>
+<a class="con" href="../"	title="Home">Home</a>
 
-</u>�@
+</u>
 <select name="Data" style="width:200px;">
 <option value="1">slot 1 : no save
 <option value="2">slot 2 : no save
