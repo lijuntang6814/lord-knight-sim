@@ -16,8 +16,8 @@ function msclk(a,b,c){
 }
 
 function mswhl(skillid){
-	if(event.wheelDelta <= -120){ y = 1; }
-	else { y = -1; }
+	if(event.wheelDelta <= -120){ y = -1; }
+	else { y = 1; }
 	setPoint(skillid,eval(skillid + "_P") + y);
 }
 
